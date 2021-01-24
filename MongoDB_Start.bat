@@ -2,4 +2,4 @@
 mkdir Log
 mkdir Log\0
 
-..\Binary\mongodb\4.2.8\bin\mongod --config Config\0.conf
+..\Binary\mongodb\mongodb-win32-x86_64-windows-4.4.3\bin\mongod --config Config\0.conf

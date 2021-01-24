@@ -1,0 +1,12 @@
+use admin
+db.createUser(
+	{ 
+		user:'아이디'
+		, pwd:'비밀번호'
+		, roles: [ 
+			{ "role" : "userAdminAnyDatabase", "db" : "admin" }
+			, { "role" : "dbAdminAnyDatabase", "db" : "admin" }
+			, { "role" : "readWriteAnyDatabase", "db" : "admin" } 
+		]
+	}
+)
