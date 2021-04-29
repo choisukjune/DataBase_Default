@@ -1,12 +1,24 @@
 use admin
 db.createUser(
 	{ 
-		user:'아이디'
-		, pwd:'비밀번호'
+		user:'tjrwns'
+		, pwd:'123qweasdzxc'
 		, roles: [ 
 			{ "role" : "userAdminAnyDatabase", "db" : "admin" }
 			, { "role" : "dbAdminAnyDatabase", "db" : "admin" }
 			, { "role" : "readWriteAnyDatabase", "db" : "admin" } 
 		]
 	}
+)
+
+global.CONST.MongoDB.OPTIONS = {
+	"self" : { ID : "tjrwns", PWD : "123qweasdzxc", HOST : "localhost", PORT : 59320 }	
+};
+
+db.createUser(
+  {
+    user: "admin",
+    pwd: "tjrwns2482",
+    roles: [ { role: "root", db: "admin" } ]
+  }
 )
