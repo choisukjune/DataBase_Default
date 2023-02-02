@@ -4,5 +4,6 @@ Log/
 
 # files
 
+.DS_Store
 *.result
 _cmd.exe
